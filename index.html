@@ -1,4 +1,14 @@
 <html>
+<script type="text/javascript">
+	var dog = {
+		barckCount : 0,
+		bark: function(barks) {
+			this.barckCount += barks;
+		}
+	}
+	var cat = {barckCount : 2}
+	dog.bark.call(cat,1);
+</script>
 <body>
 	<h1>Hello World!</h1>
 	<p>First Paragraph</p>
