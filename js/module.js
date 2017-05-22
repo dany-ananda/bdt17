@@ -9,7 +9,8 @@ module.exports = function(dirName, extName, callback) {
 
         if(err) {
             callback(err, null);
-        } else {
+        } 
+        else {
             var filteredFile = [];
             for(var i=1; i<files.length; i++) {
                  if(_ext == path.extname(files[i])) {
